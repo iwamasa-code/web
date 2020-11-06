@@ -1,0 +1,66 @@
+header {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    padding: 6.8rem 0 6.8rem 0;
+    @include tab {
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        padding: 2.4rem 0 2.4rem 0;
+        position: static;
+    }
+}
+
+.header-logo {
+    font-size: 3.8rem;
+    letter-spacing: 0.5rem;
+    margin: 0 8rem 0 10.0rem;
+    @include tab {
+        font-size: 2.2rem;
+        margin: 2.4rem 0 2.4rem 2.1rem;
+    }
+}
+
+nav {
+    width: 30%;
+    ul {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 1.8rem;
+    color: #707070;
+    letter-spacing: 0.3rem;
+}
+        li:hover {
+        color: black;
+        border-bottom: 1px solid black;
+    }
+        @include tab {
+        display: none;
+    }
+}
+
+.ham {  
+    display: none;
+    @include tab {
+        width: 1.6rem;
+        height: 1.4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 5.3rem;
+        span {
+            display: inline-block;
+            width: 100%;
+            height: 2px;
+            background-color: #3B4043;
+            &:nth-of-type(3) {
+                content: "";
+                width: 70%;
+            }
+        }
+    }
+}

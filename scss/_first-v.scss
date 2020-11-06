@@ -1,0 +1,65 @@
+#first-v {
+    background-image: url("../img/Blond\ woman\ with\ long\ curly\ beautiful\ hair.png");
+    background-size: 54vw;
+    background-repeat: no-repeat;
+    background-position: right top;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    @include tab {
+        position: relative;
+        background-position: top left;
+        background-size: cover;
+        height: 100vh;  
+    }
+}
+
+.fv-wrap {
+    width: 38%;
+    @include tab {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+.fv-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    letter-spacing: 3.8px;
+    text-align: left;
+    @include tab {
+        display: flex;
+        flex-direction: column-reverse;
+        color: #fff;
+        z-index: 1;
+        width: 100vw;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-42%,-80%);
+    }
+    &_ja {
+        width: 100%;
+        font-size: 3.8rem;
+        padding-left: 12vw;
+        font-family: ヒラギノ明朝 Pro;
+        @include tab {
+            margin-top: 6rem;
+        }
+    }
+    &_en {
+        width: 100%;
+        padding-left: 8vw;
+        font-size: 3.8rem;
+        font-family: Zapfino;
+        margin-top: 10rem;
+    }
+}

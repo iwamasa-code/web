@@ -1,0 +1,719 @@
+@charset "UTF-8";
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherti;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+html {
+  font-size: 62.5%;
+}
+
+.inner {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 5.4px;
+  font-size: 1.8rem;
+  color: #707070;
+  padding-top: 256px;
+}
+
+.title:after {
+  content: "";
+  display: inline-block;
+  width: 9.9rem;
+  border-top: 1px solid #707070;
+  margin-left: 1vw;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  padding: 6.8rem 0 6.8rem 0;
+}
+
+@media screen and (max-width: 959px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #fff;
+    padding: 2.4rem 0 2.4rem 0;
+    position: static;
+  }
+}
+
+.header-logo {
+  font-size: 3.8rem;
+  letter-spacing: 0.5rem;
+  margin: 0 8rem 0 10.0rem;
+}
+
+@media screen and (max-width: 959px) {
+  .header-logo {
+    font-size: 2.2rem;
+    margin: 2.4rem 0 2.4rem 2.1rem;
+  }
+}
+
+nav {
+  width: 30%;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.8rem;
+  color: #707070;
+  letter-spacing: 0.3rem;
+}
+
+nav li:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+@media screen and (max-width: 959px) {
+  nav {
+    display: none;
+  }
+}
+
+.ham {
+  display: none;
+}
+
+@media screen and (max-width: 959px) {
+  .ham {
+    width: 1.6rem;
+    height: 1.4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 5.3rem;
+  }
+  .ham span {
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: #3B4043;
+  }
+  .ham span:nth-of-type(3) {
+    content: "";
+    width: 70%;
+  }
+}
+
+#first-v {
+  background-image: url("../img/Blond woman with long curly beautiful hair.png");
+  background-size: 54vw;
+  background-repeat: no-repeat;
+  background-position: right top;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+@media screen and (max-width: 959px) {
+  #first-v {
+    position: relative;
+    background-position: top left;
+    background-size: cover;
+    height: 100vh;
+  }
+}
+
+.fv-wrap {
+  width: 38%;
+}
+
+@media screen and (max-width: 959px) {
+  .fv-wrap {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+.fv-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  letter-spacing: 3.8px;
+  text-align: left;
+}
+
+@media screen and (max-width: 959px) {
+  .fv-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    color: #fff;
+    z-index: 1;
+    width: 100vw;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-42%, -80%);
+            transform: translate(-42%, -80%);
+  }
+}
+
+.fv-box_ja {
+  width: 100%;
+  font-size: 3.8rem;
+  padding-left: 12vw;
+  font-family: ヒラギノ明朝 Pro;
+}
+
+@media screen and (max-width: 959px) {
+  .fv-box_ja {
+    margin-top: 6rem;
+  }
+}
+
+.fv-box_en {
+  width: 100%;
+  padding-left: 8vw;
+  font-size: 3.8rem;
+  font-family: Zapfino;
+  margin-top: 10rem;
+}
+
+#concept {
+  background: -webkit-gradient(linear, left bottom, left top, from(#a1938689), color-stop(50%, #a1938689), color-stop(50%, #a193861f), to(rgba(162, 147, 134, 0.122)));
+  background: linear-gradient(0deg, #a1938689 0%, #a1938689 50%, #a193861f 50%, rgba(162, 147, 134, 0.122) 100%);
+}
+
+@media screen and (max-width: 959px) {
+  #concept {
+    background: -webkit-gradient(linear, left bottom, left top, from(#a1938689), color-stop(75%, #a1938689), color-stop(75%, #a193861f), to(#a193861f));
+    background: linear-gradient(0deg, #a1938689 0%, #a1938689 75%, #a193861f 75%, #a193861f 100%);
+  }
+}
+
+.concept-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 1.1rem;
+  position: relative;
+}
+
+.concept-img_one {
+  width: 573vw;
+}
+
+@media screen and (max-width: 959px) {
+  .concept-img_one {
+    width: 50%;
+  }
+}
+
+.concept-img_two {
+  width: 332vw;
+  margin-left: 1.3vw;
+}
+
+@media screen and (max-width: 959px) {
+  .concept-img_two {
+    width: 50%;
+  }
+}
+
+.concept-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 70px 184px 70px 100px;
+}
+
+@media screen and (max-width: 959px) {
+  .concept-text {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.concept-text_title {
+  width: 35vw;
+  font-size: 4rem;
+  color: #fff;
+  letter-spacing: 7.2px;
+}
+
+@media screen and (max-width: 959px) {
+  .concept-text_title {
+    width: 120%;
+    font-size: 2.8vw;
+    font-family: ヒラギノ明朝 Pro;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.concept-text_caption {
+  width: 33vw;
+  letter-spacing: 1.2px;
+  line-height: 1.5vw;
+  font-size: 1.6vw;
+  color: #fff;
+}
+
+@media screen and (max-width: 959px) {
+  .concept-text_caption {
+    width: 120%;
+    font-size: 1.6rem;
+    margin: 1.8rem auto;
+    line-height: 4vw;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .title {
+    padding-top: 6rem;
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+  }
+}
+
+.menu-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1.1rem;
+}
+
+@media screen and (max-width: 959px) {
+  .menu-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.cohesive {
+  width: 22%;
+}
+
+@media screen and (max-width: 959px) {
+  .cohesive {
+    width: 100%;
+  }
+}
+
+.menu-img {
+  width: 100%;
+}
+
+.menu_img {
+  width: 100%;
+}
+
+.menu_img:nth-of-type(1) {
+  margin-top: 6rem;
+}
+
+.service {
+  font-size: 3rem;
+  font-family: Roboto Mono for Powerline;
+  margin-top: 3.7rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 959px) {
+  .service {
+    text-align: left;
+  }
+}
+
+.menu-box {
+  font-size: 1.6rem;
+  font-family: Roboto Mono for Powerline;
+  line-height: 1.3vw;
+  letter-spacing: 0.6rem;
+}
+
+.menu-box_text {
+  margin-top: 3.4rem;
+}
+
+@media screen and (max-width: 959px) {
+  .menu-box_text {
+    line-height: 6.5vw;
+    letter-spacing: 1vw;
+  }
+}
+
+.menu-box_money {
+  margin-top: 5.2rem;
+  text-align: right;
+}
+
+.access-wrap {
+  background-color: #A193861F;
+  margin-top: 7rem;
+}
+
+.category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #D0C5BA;
+}
+
+@media screen and (max-width: 959px) {
+  .category {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.category_box {
+  width: 50vw;
+  margin-left: 12.5rem;
+  padding: 101px 273px 103px 0;
+}
+
+@media screen and (max-width: 959px) {
+  .category_box {
+    width: 100%;
+    margin-left: 2rem;
+  }
+}
+
+.category_box h5 {
+  font-family: Roboto Mono for Powerline;
+  color: #00000038;
+  font-size: 2.4rem;
+}
+
+.category_box p {
+  font-size: 1.6rem;
+  letter-spacing: 0.5em;
+  color: #fff;
+  padding-top: 3rem;
+}
+
+.category_box p:nth-of-type(1) {
+  margin-top: 2.4px;
+}
+
+@media screen and (max-width: 959px) {
+  .category_box p {
+    width: 100vw;
+  }
+}
+
+.access-map {
+  width: 100%;
+}
+
+@media screen and (max-width: 959px) {
+  .access-map {
+    height: 100vw;
+  }
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 959px) {
+  .map {
+    width: 100%;
+  }
+}
+
+.title {
+  padding-bottom: 2rem;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer::before {
+  content: "";
+  display: inline-block;
+  border-bottom: 1px solid #7070704D;
+  width: 85%;
+  margin-top: 17.5rem;
+}
+
+.footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 8.75rem 0;
+}
+
+.footer-wrap_reserve {
+  font-size: 1.8rem;
+  color: #707070;
+  border: 1px solid #707070;
+  padding: 10px 41px;
+}
+
+@media screen and (max-width: 959px) {
+  .footer-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.footer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 959px) {
+  .footer-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    margin-top: 7rem;
+  }
+}
+
+.footer-logo {
+  font-size: 3.2rem;
+  letter-spacing: 1.6px;
+  color: #7070704D;
+  margin-right: 2.6rem;
+}
+
+@media screen and (max-width: 959px) {
+  .footer-logo {
+    margin-right: 10rem;
+  }
+}
+
+.footer-logo_twitter {
+  font-size: 2.2rem;
+  margin-right: 0.9rem;
+}
+
+.footer-logo_facebook {
+  font-size: 2.2rem;
+}
+/*# sourceMappingURL=main.css.map */
