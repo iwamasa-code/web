@@ -533,7 +533,7 @@ nav li:hover {
 }
 
 .access-wrap {
-  background-color: #A193861F;
+  background-color: #a193861f;
   margin-top: 7rem;
 }
 
@@ -544,7 +544,7 @@ nav li:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #D0C5BA;
+  background-color: #d0c5ba;
 }
 
 @media screen and (max-width: 959px) {
@@ -572,7 +572,7 @@ nav li:hover {
   }
 }
 
-.category_box h5 {
+.category_box h3 {
   font-family: Roboto Mono for Powerline;
   color: #00000038;
   font-size: 2.4rem;
